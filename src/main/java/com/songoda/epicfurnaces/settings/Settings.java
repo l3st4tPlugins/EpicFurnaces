@@ -27,6 +27,12 @@ public class Settings {
             "restarts. With that said it is advised to keep this enabled.",
             "If however you enjoy living on the edge, feel free to turn it off.");
 
+    public static final ConfigSetting FURNACE_AREA = new ConfigSetting(config, "Main.Furnace Area", 256,
+            "This controls how big a furnace ticking area is.",
+            "Higher size means decreased performance, but less chances of overheat",
+            "missing a spot. Lower size means better performance, but overheat",
+            "might leave a few spots. Minimum value is 16.");
+
     public static final ConfigSetting FURNACE_ITEM = new ConfigSetting(config, "Main.Remember Furnace Item Levels", true,
             "Should furnace levels be remembered when broken?");
 
